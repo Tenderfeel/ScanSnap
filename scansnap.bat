@@ -15,7 +15,7 @@ rem 分割ページ数
 set pageCnt=40
 
 rem ZIPファイルの保存先
-set zipSaveDir=Z:\同人誌
+set zipSaveDir=Z:\COMICS
 
 rem -------- ローカル環境変数 ---------
 

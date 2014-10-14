@@ -15,7 +15,7 @@ rem 分割ページ数
 set pageCnt=40
 
 rem ZIPファイルの保存先
-set zipSaveDir=Z:\COMICS
+set zipSaveDir=X:\Books
 
 rem -------- ローカル環境変数 ---------
 
@@ -88,13 +88,13 @@ rem ----- サブ処理 -----
 
 :exec
 
-rem ---著者名がある場合
+rem ---著者名がない場合
 if %CIRCLE%=='' ( 
 set dirname=%BOOK_TITLE%
 
-rem ---著者名が無い場合
+rem ---著者名がある場合
  ) else ( 
-set dirname=%BOOK_TITLE%【%CIRCLE%】
+set dirname=[%CIRCLE%]%BOOK_TITLE%
  ) 
 
 rem ---ディレクトリが存在する
